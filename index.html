@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax sort /website</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="wrapper">
+        <div class="container row">
+            <div class="bar"></div>
+            <nav>
+                <ul class="menu">
+                    <li><i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard</li>
+                    <li><i class="fa fa-address-card-o" aria-hidden="true"></i>Orders</li>
+                    <li><i class="fa fa-dropbox" aria-hidden="true"></i>Products</li>
+                    <li><i class="fa fa-pie-chart" aria-hidden="true"></i>Analytics</li>
+                    <li><i class="fa fa-cog" aria-hidden="true"></i>About Me<i class="fa fa-caret-down" aria-hidden="true"></i></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <section>
+        <div class="container row">
+            <div class="col-3">
+                <div class="row">
+                    <ul>
+                        <h2 class="panelHeader"> Produts Details</h2>
+                        <li>
+                            <h3> Date created</h3>
+                            <p>June 14, 2017</p>
+                        </li>
+                        <li>
+                            <h3>Status</h3>
+                            <p>Mark as sent</p>
+                            <p>Unsent</p>
+                        </li>
+                        <li>
+                            <h3>Sort by Id</h3>
+                            <button class='idSortBtn'>ID SORT</button>
+                        </li>
+                        <li>
+                            <h3>Sort by Acronym</h3>
+                            <button class='acronymSortBtn'>ACRONYM SORT</button>
+                        </li>
+                        <li>
+                            <h3>Sort by Name</h3>
+                            <button class='nameSortBtn'>NAME SORT</button>
+                        </li>
+                        <li>
+                            <h3>Filter</h3>
+                            <input class="filter">
+                        </li>
+                    </ul>
+                    <button class="sendBtn"><i class="fa fa-envelope" aria-hidden="true"></i>SEND</button>
+                </div>
+
+
+            </div>
+            <div class="col-9">
+
+
+                <h2 class="productHeader"><span> #</span> Products </h2>
+                <table class="dataTable">
+
+                    <div class="pageBtns">
+                        <button class="pageNumber next">NEXT PAGE<i class="fa fa-caret-right" aria-hidden="true"></i></button>
+                        <div class="pageNumber tableNumber">1</div>
+                        <button class="pageNumber prev"><i class="fa fa-caret-left" aria-hidden="true"></i>PREV PAGE </button>
+                    </div>
+
+
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Acronym</th>
+                            <th>Name</th>
+                        </tr>
+                    </thead>
+                    <tbody class="con">
+
+                    </tbody>
+                </table>
+                <div class="dashboardText">
+                    <p> Przykład prostej strony web przy wykorzystaniu HTML, CSS i jQuery stworzona dla EX7 Sp. z o. o. na potrzeby rekrutacji. </p>
+                </div>
+                <div class="ordersText">
+                    <p> Treść zadania:</p>
+                    <p>
+                        Zadanie polega na przygotowaniu prostej strony web z wykorzystaniem html/css/js. Layout nie jest z góry narzucony - ma natomiast wyglądać tak, by strona była "miła dla oka" (UX design) i użyteczna dla klienta końcowego (dozwolone jest wykorzystanie istniejących szablonów dostępnych w sieci). Strona ma mieć możliwość pobrania danych z API pod adresem http://rt.ex7.pl/ i wyświetlenie ich w formie tabeli z możliwością filtrowania, sortowania i paginacji (dostępne są odpowiednie parametry w API). Niedozwolone jest użycie gotowej kontrolki generującej tabelę i wyżej wymienione mechanizmy. Niedozwolone jest również przygotowanie rozwiązania opartego na server-side - cała logika musi być oprogramowana „lokalnie” (js/jquery lub inny framework js).</p>
+                </div>
+                <div class="analyticsText">
+                    <p> EX7 Sp. z o. o. </p>
+                    <p>ul. Krakowska 87</p>
+                    <p> 32-052 Skawina </p>
+                    <p>KRS: 0000509140</p>
+                    <p> NIP: 6793100543</p>
+                </div>
+                <div class="aboutMeText">
+                    <p> Dzień dobry! Nazywam się Mateusz Bieniek i jestem początkującym front-end Developerem. Jestem absolwentem studiów inżynierskich na kierunku fizyka techniczna ukończonych na Politechnice Krakowskiej. Aktualnie poszukuję pracy jako Front-End Developer. Potrafię zadbać o wygląd oraz funkcjonalnośc stron internetowych. </p>
+                </div>
+
+                <button class="paginationBtn"> MORE </button>
+
+            </div>
+        </div>
+    </section>
+</body>
+<script src="dist/jquery-3.2.0.min.js" type="text/javascript"></script>
+<script src="dist/app.js" type="text/javascript"></script>
+
+</html>

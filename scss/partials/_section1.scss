@@ -1,0 +1,338 @@
+.wrapper {
+    background: $bgMenu;
+    position: relative;
+    z-index: 999;
+    left: 0;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+}
+
+body {
+    background: $bgSection;
+    height: 100vh;
+}
+
+.hamburger {
+    display: inline-block;
+    float: right;
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    color: white;
+    @media (min-width: 750px) {
+        display: none;
+    }
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.menu {
+    display: none;
+    margin-top: 50px;
+    font-weight: 500;
+    top: 65%;
+    left: 35%;
+    // transition: 0.5s;
+    @media (min-width: 750px) {
+        display: block;
+        margin-top: 0px;
+    }
+    li {
+        text-align: center;
+        background: #6eb43a;
+        cursor: pointer;
+        padding: 15px 0;
+        font-size: 16px;
+        letter-spacing: 0.4px;
+        color: white;
+        border-bottom: none;
+        border-top: 1px solid #ffffff;
+        @media (min-width: 750px) {
+            border: none;
+            cursor: pointer;
+            float: left;
+            padding: 15px 0px 15px 0px;
+            display: inline-block;
+            letter-spacing: 0.4px;
+            color: white;
+            margin-right: 20px;
+        }
+    }
+     :active {
+        background: #75c03e;
+    }
+     :hover {
+        background: #75c03e;
+    }
+    li:last-child {
+        display: none;
+        @media (min-width: 750px) {
+            display: inline-block;
+            float: right;
+            border-bottom: none;
+            .fa-cog {
+                float: left;
+                padding: 1px 4px 0 0;
+            }
+            .fa-caret-down {
+                float: right;
+                padding: 1px 0 0 4px;
+            }
+        }
+    }
+     :nth-child(1),
+     :nth-child(2),
+     :nth-child(3),
+     :nth-child(4) {
+        i {
+            float: none;
+            padding: 1px 4px 0 0;
+            @media (min-width: 750px) {
+                float: left;
+            }
+        }
+    }
+}
+
+.dashboardText,
+.ordersText,
+.analyticsText,
+.aboutMeText {
+    p {
+        font-size: 15px;
+        padding: 10px 0px;
+        text-align: justify;
+    }
+}
+
+.show {
+    display: block;
+}
+
+.productHeader {
+    border-bottom: 1px solid $border;
+    margin: 0px 0px 30px 0;
+    padding: 10px 0 10px 0;
+    font-size: 25px;
+    color: $headerText;
+    font-weight: 700;
+    span {
+        font-size: 25px;
+        color: $hash;
+    }
+}
+
+.pageNumber {
+    position: relative;
+    float: right;
+    margin: 0 0 25px 25px;
+    background: #f58026;
+    border: none;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 9px;
+    @media(min-width: 450px) {
+        margin: 0 0px 25px 15px;
+        font-size: 12px;
+    }
+    .fa-caret-left {
+        padding-right: 5px;
+    }
+    .fa-caret-right {
+        padding-left: 5px;
+    }
+    @media(min-width: 750px) {
+        //            margin: 11px 0px 0 15px;
+        //            padding: 5px 15px;
+        //            font-size: 10px;
+        margin: -75px 0px 45px 15px;
+        padding: 10px 20px;
+    }
+}
+
+.pageNumber:hover {
+    background: rgb(239, 112, 0);
+}
+
+.tableNumber:hover {
+    background: #f58026;
+    cursor: default;
+}
+
+ul {
+    border: 1px solid $border;
+    border-left: 0;
+    border-bottom: 0;
+    .panelHeader {
+        background: $bgForm;
+        font-size: 16px;
+        height: 50px;
+        text-align: center;
+        padding: 15px 0;
+        border-bottom: 1px solid $border;
+    }
+    li {
+        list-style-type: none;
+        border-bottom: 1px dashed $border;
+        padding: 10px 0;
+        h3 {
+            padding: 4px 0;
+            font-size: 15px;
+        }
+        p {
+            font-size: 14px;
+            padding: 3px 0px;
+        }
+        button,
+        select,
+        input {
+            background: $sortBtns;
+            border: none;
+            padding: 10px 20px;
+            box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 2px;
+            color: white;
+            font-weight: 600;
+            margin: 25px 0;
+            width: 10em;
+            cursor: pointer;
+        }
+        button:hover,
+        select:hover {
+            input:hover {
+                background: rgb(239, 112, 0);
+            }
+        }
+        li:last-child {
+            border-bottom: 1px solid $border;
+        }
+    }
+}
+
+.sendBtn {
+    background: $bgMenu;
+    border: none;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    color: white;
+    font-weight: 600;
+    margin: 25px calc(34% - 25px);
+    width: 10em;
+    cursor: pointer;
+    i {
+        padding: 0px 4px;
+        margin-bottom: 2px;
+    }
+    @media (min-width:450px) {
+        margin: 25px calc(41% - 25px);
+    }
+    @media (min-width:750px) {
+        margin: 25px calc(20% - 25px);
+    }
+    @media (min-width:900px) {
+        margin: 25px calc(30% - 25px);
+    }
+}
+
+.sendBtn:hover,
+.paginationBtn:hover {
+    background: #53c300;
+}
+
+.dataTable {
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+    text-align: center;
+    td,
+    th {
+        padding: 15px 0px;
+    }
+    thead {
+        th {
+            background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #474646), color-stop(1, #1F1F1F));
+            background: -moz-linear-gradient( center top, #474646 5%, #1F1F1F 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#474646', endColorstr='#1F1F1F');
+            background-color: #474646;
+            color: #FFFFFF;
+            font-size: 18px;
+            font-weight: normal;
+            border-left: 1px solid $border;
+        }
+        th:first-child {
+            border: none;
+            width: 4em;
+        }
+        th:nth-child(2) {
+            width: 6em;
+        }
+    }
+    tbody {
+        td {
+            color: #6E6865;
+            font-size: 15px;
+            border-bottom: 1px solid $border;
+            font-weight: normal;
+        }
+        td:first-child {
+            border-left: none;
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
+    }
+}
+
+.paginationBtn {
+    background: $bgMenu;
+    border: none;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    color: white;
+    font-weight: 600;
+    margin: 25px calc(35% - 25px);
+    width: 10em;
+    cursor: pointer;
+    @media (min-width: 450px) {
+        margin: 25px calc(41% - 25px);
+    }
+    @media (min-width:750px) {
+        margin: 25px calc(45% - 25px);
+    }
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    @media(min-width: 450px) {
+        flex-direction: column;
+    }
+}

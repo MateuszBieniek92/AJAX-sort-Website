@@ -1,0 +1,449 @@
+/* line 1, scss/main.css */
+* {
+  font-family: 'Raleway', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 14px; }
+
+/* line 8, scss/main.css */
+.container {
+  max-width: 1170px;
+  margin: 0 auto; }
+
+/* line 12, scss/main.css */
+.row::after, .row::before {
+  display: table;
+  content: '';
+  clear: both; }
+
+/* line 17, scss/main.css */
+.col-1 {
+  width: 8.33333%; }
+
+/* line 20, scss/main.css */
+.col-2 {
+  width: 16.66667%; }
+
+/* line 23, scss/main.css */
+.col-3 {
+  width: 25%; }
+
+/* line 26, scss/main.css */
+.col-4 {
+  width: 33.33333%; }
+
+/* line 29, scss/main.css */
+.col-5 {
+  width: 41.66667%; }
+
+/* line 32, scss/main.css */
+.col-6 {
+  width: 50%; }
+
+/* line 35, scss/main.css */
+.col-7 {
+  width: 58.33333%; }
+
+/* line 38, scss/main.css */
+.col-8 {
+  width: 66.66667%; }
+
+/* line 41, scss/main.css */
+.col-9 {
+  width: 75%; }
+
+/* line 44, scss/main.css */
+.col-10 {
+  width: 83.33333%; }
+
+/* line 47, scss/main.css */
+.col-11 {
+  width: 91.66667%; }
+
+/* line 50, scss/main.css */
+.col-12 {
+  width: 100%; }
+
+/* line 53, scss/main.css */
+[class*='col-'] {
+  float: left;
+  min-height: 1px;
+  padding: 10px; }
+
+/* line 58, scss/main.css */
+.wrapper {
+  background: #6eb43a;
+  position: relative;
+  z-index: 999;
+  left: 0;
+  right: 0px;
+  top: 0px;
+  width: 100%;
+  height: 50px; }
+
+/* line 68, scss/main.css */
+body {
+  background: #ffffff;
+  height: 100vh; }
+
+/* line 72, scss/main.css */
+.hamburger {
+  display: inline-block;
+  float: right;
+  position: absolute;
+  top: 8px;
+  right: 20px;
+  color: white; }
+
+@media (min-width: 750px) {
+  /* line 80, scss/main.css */
+  .hamburger {
+    display: none; } }
+
+/* line 83, scss/main.css */
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s; }
+
+/* line 92, scss/main.css */
+.change .bar1 {
+  transform: rotate(-45deg) translate(-9px, 6px); }
+
+/* line 95, scss/main.css */
+.change .bar2 {
+  opacity: 0; }
+
+/* line 98, scss/main.css */
+.change .bar3 {
+  transform: rotate(45deg) translate(-8px, -8px); }
+
+/* line 101, scss/main.css */
+.menu {
+  display: none;
+  margin-top: 50px;
+  font-weight: 500;
+  top: 65%;
+  left: 35%; }
+
+@media (min-width: 750px) {
+  /* line 108, scss/main.css */
+  .menu {
+    display: block;
+    margin-top: 0px; } }
+
+/* line 111, scss/main.css */
+.menu li {
+  text-align: center;
+  background: #6eb43a;
+  cursor: pointer;
+  padding: 15px 0;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  color: white;
+  border-bottom: none;
+  border-top: 1px solid #ffffff; }
+
+@media (min-width: 750px) {
+  /* line 122, scss/main.css */
+  .menu li {
+    border: none;
+    cursor: pointer;
+    float: left;
+    padding: 15px 0px 15px 0px;
+    display: inline-block;
+    letter-spacing: 0.4px;
+    color: white;
+    margin-right: 20px; } }
+
+/* line 131, scss/main.css */
+.menu :active {
+  background: #75c03e; }
+
+/* line 133, scss/main.css */
+.menu :hover {
+  background: #75c03e; }
+
+/* line 135, scss/main.css */
+.menu li:last-child {
+  display: none; }
+
+@media (min-width: 750px) {
+  /* line 138, scss/main.css */
+  .menu li:last-child {
+    display: inline-block;
+    float: right;
+    border-bottom: none; }
+  /* line 142, scss/main.css */
+  .menu li:last-child .fa-cog {
+    float: left;
+    padding: 1px 4px 0 0; }
+  /* line 145, scss/main.css */
+  .menu li:last-child .fa-caret-down {
+    float: right;
+    padding: 1px 0 0 4px; } }
+
+/* line 148, scss/main.css */
+.menu :nth-child(1) i,
+.menu :nth-child(2) i,
+.menu :nth-child(3) i,
+.menu :nth-child(4) i {
+  float: none;
+  padding: 1px 4px 0 0; }
+
+@media (min-width: 750px) {
+  /* line 155, scss/main.css */
+  .menu :nth-child(1) i,
+  .menu :nth-child(2) i,
+  .menu :nth-child(3) i,
+  .menu :nth-child(4) i {
+    float: left; } }
+
+/* line 161, scss/main.css */
+.dashboardText p,
+.ordersText p,
+.analyticsText p,
+.aboutMeText p {
+  font-size: 15px;
+  padding: 10px 0px;
+  text-align: justify; }
+
+/* line 169, scss/main.css */
+.show {
+  display: block; }
+
+/* line 172, scss/main.css */
+.productHeader {
+  border-bottom: 1px solid #cccccc;
+  margin: 0px 0px 30px 0;
+  padding: 10px 0 10px 0;
+  font-size: 25px;
+  color: #000000;
+  font-weight: 700; }
+
+/* line 179, scss/main.css */
+.productHeader span {
+  font-size: 25px;
+  color: #cccccc; }
+
+/* line 183, scss/main.css */
+.pageNumber {
+  position: relative;
+  float: right;
+  margin: 0 0 25px 25px;
+  background: #f58026;
+  border: none;
+  padding: 10px 20px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 9px; }
+
+@media (min-width: 450px) {
+  /* line 197, scss/main.css */
+  .pageNumber {
+    margin: 0 0px 25px 15px;
+    font-size: 12px; } }
+
+/* line 200, scss/main.css */
+.pageNumber .fa-caret-left {
+  padding-right: 5px; }
+
+/* line 202, scss/main.css */
+.pageNumber .fa-caret-right {
+  padding-left: 5px; }
+
+@media (min-width: 750px) {
+  /* line 205, scss/main.css */
+  .pageNumber {
+    margin: -75px 0px 45px 15px;
+    padding: 10px 20px; } }
+
+/* line 209, scss/main.css */
+.pageNumber:hover {
+  background: #ef7000; }
+
+/* line 212, scss/main.css */
+.tableNumber:hover {
+  background: #f58026;
+  cursor: default; }
+
+/* line 216, scss/main.css */
+ul {
+  border: 1px solid #cccccc;
+  border-left: 0;
+  border-bottom: 0; }
+
+/* line 220, scss/main.css */
+ul .panelHeader {
+  background: #e3e3e3;
+  font-size: 16px;
+  height: 50px;
+  text-align: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #cccccc; }
+
+/* line 227, scss/main.css */
+ul li {
+  list-style-type: none;
+  border-bottom: 1px dashed #cccccc;
+  padding: 10px 0; }
+
+/* line 231, scss/main.css */
+ul li h3 {
+  padding: 4px 0;
+  font-size: 15px; }
+
+/* line 234, scss/main.css */
+ul li p {
+  font-size: 14px;
+  padding: 3px 0px; }
+
+/* line 237, scss/main.css */
+ul li button,
+ul li select,
+ul li input {
+  background: #ff8300;
+  border: none;
+  padding: 10px 20px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  color: white;
+  font-weight: 600;
+  margin: 25px 0;
+  width: 10em;
+  cursor: pointer; }
+
+/* line 250, scss/main.css */
+ul li button:hover input:hover,
+ul li select:hover input:hover {
+  background: #ef7000; }
+
+/* line 253, scss/main.css */
+ul li li:last-child {
+  border-bottom: 1px solid #cccccc; }
+
+/* line 256, scss/main.css */
+.sendBtn {
+  background: #6eb43a;
+  border: none;
+  padding: 10px 20px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  color: white;
+  font-weight: 600;
+  margin: 25px calc(34% - 25px);
+  width: 10em;
+  cursor: pointer; }
+
+/* line 267, scss/main.css */
+.sendBtn i {
+  padding: 0px 4px;
+  margin-bottom: 2px; }
+
+@media (min-width: 450px) {
+  /* line 271, scss/main.css */
+  .sendBtn {
+    margin: 25px calc(41% - 25px); } }
+
+@media (min-width: 750px) {
+  /* line 274, scss/main.css */
+  .sendBtn {
+    margin: 25px calc(20% - 25px); } }
+
+@media (min-width: 900px) {
+  /* line 277, scss/main.css */
+  .sendBtn {
+    margin: 25px calc(30% - 25px); } }
+
+/* line 280, scss/main.css */
+.sendBtn:hover,
+.paginationBtn:hover {
+  background: #53c300; }
+
+/* line 284, scss/main.css */
+.dataTable {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+  text-align: center; }
+
+/* line 289, scss/main.css */
+.dataTable td,
+.dataTable th {
+  padding: 15px 0px; }
+
+/* line 292, scss/main.css */
+.dataTable thead th {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #474646), color-stop(1, #1F1F1F));
+  background: -moz-linear-gradient(center top, #474646 5%, #1F1F1F 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#474646', endColorstr='#1F1F1F');
+  background-color: #474646;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: normal;
+  border-left: 1px solid #cccccc; }
+
+/* line 301, scss/main.css */
+.dataTable thead th:first-child {
+  border: none;
+  width: 4em; }
+
+/* line 304, scss/main.css */
+.dataTable thead th:nth-child(2) {
+  width: 6em; }
+
+/* line 306, scss/main.css */
+.dataTable tbody td {
+  color: #6E6865;
+  font-size: 15px;
+  border-bottom: 1px solid #cccccc;
+  font-weight: normal; }
+
+/* line 311, scss/main.css */
+.dataTable tbody td:first-child {
+  border-left: none; }
+
+/* line 313, scss/main.css */
+.dataTable tbody tr:last-child td {
+  border-bottom: none; }
+
+/* line 316, scss/main.css */
+.paginationBtn {
+  background: #6eb43a;
+  border: none;
+  padding: 10px 20px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  color: white;
+  font-weight: 600;
+  margin: 25px calc(35% - 25px);
+  width: 10em;
+  cursor: pointer; }
+
+@media (min-width: 450px) {
+  /* line 328, scss/main.css */
+  .paginationBtn {
+    margin: 25px calc(41% - 25px); } }
+
+@media (min-width: 750px) {
+  /* line 331, scss/main.css */
+  .paginationBtn {
+    margin: 25px calc(45% - 25px); } }
+
+/* line 334, scss/main.css */
+.flex {
+  display: flex;
+  flex-direction: row; }
+
+@media (min-width: 450px) {
+  /* line 338, scss/main.css */
+  .flex {
+    flex-direction: column; } }
